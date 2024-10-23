@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Message from Ali",
+    "content": "Hi, how are you?",
+    "received": "10 mins ago"
+  },
+  {
+    "title": "Message from John",
+    "content": "Are we still on for the meeting?",
+    "received": "15 mins ago"
+  },
+  {
+    "title": "Message from Sarah",
+    "content": "Don't forget to send the report.",
+    "received": "20 mins ago"
+  },
+  {
+    "title": "Message from Mike",
+    "content": "Let's grab lunch later.",
+    "received": "25 mins ago"
+  },
+  {
+    "title": "Message from Emma",
+    "content": "I finished the task you assigned.",
+    "received": "30 mins ago"
+  }
+]
