@@ -1,8 +1,5 @@
-import { Toaster } from "@/components/ui/toaster";
-import AuthProvider from "@/context/authProvider";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
-import { root } from "postcss";
 
 // import Navbar from "@/components/Navbar";
 const Navbar = dynamic(() => import("@/components/Navbar"), { ssr: false });

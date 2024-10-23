@@ -4,10 +4,8 @@ import AuthProvider from "@/context/authProvider";
 import { Toaster } from "@/components/ui/toaster";
 // import Navbar from "@/components/Navbar";
 import "./globals.css";
-import dynamic from "next/dynamic";
 
 // Dynamically import with SSR disabled
-const Navbar = dynamic(() => import("@/components/Navbar"), { ssr: false });
 
 export const metadata: Metadata = {
   title: "Annonymus Feedback",

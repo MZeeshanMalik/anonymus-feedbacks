@@ -35,6 +35,7 @@ function MessagePage() {
       // Handle any errors  that occur during the request
       toast({
         title: "Failed to send message",
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         description: (error as any).response.data.message,
         variant: "destructive",
       });

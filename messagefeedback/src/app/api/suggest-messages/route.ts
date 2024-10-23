@@ -7,7 +7,7 @@ if (!apiKey) {
 
 const genAI = new GoogleGenerativeAI(apiKey);
 
-export async function POST(req: Request): Promise<Response> {
+export async function POST(): Promise<Response> {
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
