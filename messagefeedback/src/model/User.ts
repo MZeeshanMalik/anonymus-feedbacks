@@ -27,6 +27,8 @@ export interface User extends Document {
   verifyCodeExpiry: Date;
   isAcceptingMessage: boolean;
   messages: Message[];
+  passwordResetTokenCode: number;
+  passwordResetCodeExpiry: Date;
 }
 
 const UserSchema: Schema<User> = new Schema({
@@ -66,6 +68,8 @@ const UserSchema: Schema<User> = new Schema({
     default: true,
   },
   messages: [MessageSchema],
+  passwordResetTokenCode: Number,
+  passwordResetCodeExpiry: Date,
 });
 
 const UserModel =

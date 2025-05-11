@@ -18,7 +18,7 @@ function Navbar() {
   }, [status]);
 
   return (
-    <nav className="p-4 md:p6 shadow-md">
+    <nav className="p-4 md:p6 shadow-md  text-gray-600">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <a className="text-xl font-bold mb-4 md:mb-0" href="#">
           Mystery Message
@@ -35,9 +35,18 @@ function Navbar() {
                 </Button>
               </>
             ) : (
-              <Link href="/sign-in">
-                <Button className="w-full md:w-auto">Login</Button>
-              </Link>
+              <div>
+                <Link href="/sign-in">
+                  <Button className="w-full md:w-auto m-2 bg-blue-500 hover:bg-blue-600">
+                    Login
+                  </Button>
+                </Link>
+                <Link href="/sign-up">
+                  <Button className="w-full md:w-auto bg-blue-500   hover:bg-blue-600 ">
+                    Sign up
+                  </Button>
+                </Link>
+              </div>
             )}
           </>
         )}

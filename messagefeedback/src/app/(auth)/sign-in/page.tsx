@@ -19,6 +19,7 @@ import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import { signInSchema } from "@/schemas/signInSchema";
 import { signIn } from "next-auth/react";
+import Link from "next/link";
 
 function Page() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -105,6 +106,7 @@ function Page() {
                 </FormItem>
               )}
             />
+
             <Button type="submit" disabled={isSubmitting}>
               {isSubmitting ? (
                 <>
@@ -116,6 +118,12 @@ function Page() {
             </Button>
           </form>
         </Form>
+        <Link
+          href={"/forgot-password"}
+          className="flex items-center hover:underline hover:text-blue-500"
+        >
+          Forgot password?
+        </Link>
       </div>
     </div>
   );
