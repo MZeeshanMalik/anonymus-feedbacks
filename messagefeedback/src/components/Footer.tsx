@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer(props) {
+function Footer() {
   return (
     <div>
       <footer className="text-center p-4 md:p-6">

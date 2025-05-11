@@ -137,7 +137,7 @@ function Steps() {
                     FINISH
                   </h2>
                   <p className="leading-relaxed">
-                    Review all the feedback you've received on your dashboard.
+                    Review all the feedback you have received on your dashboard.
                   </p>
                 </div>
               </div>
