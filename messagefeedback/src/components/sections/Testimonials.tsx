@@ -22,7 +22,7 @@ const testimonials = [
   {
     id: 3,
     content:
-      "As a team leader, Mystery Message has been a game-changer. My team now has a way to share feedback they might otherwise keep to themselves, creating a more open and communicative environment.",
+      "As a team leader, Mystery Message has been a game-changer. My team now has a way to share feedback they might otherwise keep to themselves creating a more open and communicative environment.",
     name: "Michael Johnson",
     role: "Product Manager",
     avatar: "/static/profile1.jpg",
