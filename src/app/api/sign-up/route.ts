@@ -14,6 +14,19 @@ export async function POST(request: Request) {
       userName,
       isVerified: true,
     });
+    const existingUserByEmail = await UserModel.findOne({
+      email,
+      isVerified: true,
+    });
+    if (existingUserByEmail) {
+      return Response.json(
+        {
+          success: false,
+          message: "User Already exists with this email",
+        },
+        { status: 400 }
+      );
+    }
     if (existingUserVerifiedByUserName) {
       return Response.json(
         {
