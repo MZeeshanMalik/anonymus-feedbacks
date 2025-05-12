@@ -80,10 +80,11 @@ export async function GET() {
         { status: 404 }
       );
     }
+    console.log("status", foundUser.isAcceptingMessage);
     return Response.json(
       {
         success: true,
-        isAcceptingMessages: foundUser.isAcceptingMessage,
+        isAcceptingMessage: foundUser.isAcceptingMessage,
       },
       { status: 200 }
     );

@@ -32,10 +32,9 @@ export async function GET(request: Request) {
       );
     }
     const { userName } = result.data;
-
     const existingVerifiedUserName = await UserModel.findOne({
       userName,
-      isVerified: true,
+      // isVerified: true,
     });
 
     if (existingVerifiedUserName) {
@@ -53,7 +52,7 @@ export async function GET(request: Request) {
         succes: true,
         message: "Username is unique",
       },
-      { status: 400 }
+      { status: 200 }
     );
   } catch (error) {
     console.error("Error checking Username", error);

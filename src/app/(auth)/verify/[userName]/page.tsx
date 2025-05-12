@@ -37,7 +37,9 @@ function VerifyAccount() {
         description: response.data.message,
         variant: "success",
       });
-      router.replace("sign-in");
+      setTimeout(() => {
+        router.push("/sign-in");
+      }, 3000);
     } catch (error) {
       console.log(error);
       const axiosError = error as AxiosError<ApiResponse>;
