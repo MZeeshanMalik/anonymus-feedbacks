@@ -78,7 +78,8 @@ function Page() {
         description: response.data.message,
       });
       setTimeout(() => {
-        router.replace(`/verify/${data.userName}`);
+        // router.replace(`/verify/${data.userName}`);
+        router.replace("/sign-in");
       }, 1500);
     } catch (error) {
       const axiosError = error as AxiosError<ApiResponse>;
